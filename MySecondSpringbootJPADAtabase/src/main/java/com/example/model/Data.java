@@ -3,6 +3,7 @@ package com.example.model;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
 
 import org.springframework.ui.Model;
 
@@ -10,8 +11,11 @@ import org.springframework.ui.Model;
 @Table(name="data")
 public class Data
 {
+
 @Id
 int id;
+@NotEmpty(message = "*Please provide an id")
+
 String pass;
 String name;
 String address;
@@ -36,9 +40,6 @@ public Data(int id,String pass,String name, String address, String city) {
 	this.address = address;
 	this.city = city;
 }
-
-
-
 
 public int getId() {
 	return id;
@@ -75,6 +76,7 @@ public void setCity(String city) {
 	this.city = city;
 }
 
-	
+
+
 	
 }

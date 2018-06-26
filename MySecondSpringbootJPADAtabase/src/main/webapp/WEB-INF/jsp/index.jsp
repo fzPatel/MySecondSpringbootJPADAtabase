@@ -18,6 +18,12 @@ ${msg}
 <tr><td>
 	Userid <input type="number" name="id"/>
 		</td></tr>
+		
+		
+		Userid<input type="text" id="email" name="email"  th:placeholder="Email"
+				class="form-control" /> <br/> 
+		
+		
 <tr><td>
 	Password <input type="text" name="pass"/>
 	</td></tr>
@@ -40,7 +46,7 @@ ${msg}
 </form>
 </table>
 
-<a href="/go">Click Here</a>
+<a href="/show-users">Show Users</a>
 </center>
 
 

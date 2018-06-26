@@ -3,6 +3,8 @@ package com.example.demo;
 import java.util.List;
 import java.util.Optional;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,6 +24,24 @@ public class MyServicesController {
 
 @Autowired
 private DataService dataservice;
+
+
+/*
+
+@GetMapping("/show-users")
+@ResponseBody
+public List<Data> showusers(HttpServletRequest request){
+	request.setAttribute("users", dataservice.getAlldata());
+
+	return dataservice.getAlldata();
+}
+
+
+
+*/
+
+
+
 
 
 	//------------------------------Services----------------------------------//
